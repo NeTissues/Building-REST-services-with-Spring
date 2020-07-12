@@ -15,9 +15,9 @@ class LoadDatabase {
     CommandLineRunner initDatabase(EmployeeRepository repository) {
 
         return args -> {
-          log.info("Preloading " + repository.save(new Employee("Eren Yeager", "Shitty protagonist")));
-          log.info("Preloading " + repository.save(new Employee("Mikasa Ackerman", "Waifu")));
-          log.info("Preloading " + repository.save(new Employee("Levi Ackerman", "Rolemodel")));
+          log.info("Preloading " + repository.save(new Employee("Eren", "Yeager", "Protagonist")));
+          log.info("Preloading " + repository.save(new Employee("Mikasa", "Ackerman","Waifu")));
+          log.info("Preloading " + repository.save(new Employee("Levi", "Ackerman", "Rolemodel")));
         };
     }
 }
